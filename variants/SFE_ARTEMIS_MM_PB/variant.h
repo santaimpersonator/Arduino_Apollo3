@@ -38,4 +38,10 @@ extern UART Serial1;
 #define MISO SPI_SDI
 #define SCK SPI_CLK
 
+// Backwards Compatibility with SPI library
+#define PIN_SPI_SS   SPI_CS
+#define PIN_SPI_MOSI SPI_SDO
+#define PIN_SPI_MISO SPI_SDI
+#define PIN_SPI_SCK  SPI_CLK
+
 #endif // _VARIANT_H_
